@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #e6f7ff, #ffffff);
+    color: #333;
+}
+  
+  
+.wrapper {
+    min-height: 100%;
+    padding-bottom: 70px; /* memberi ruang untuk footer */
+}
+  
+  
+header {
+    background: linear-gradient(to right, hsl(100, 59%, 56%), hsl(161, 55%, 43%));
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px #ffda05f4;
+}
+  
+  
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+  
+.nav-buttons form {
+    display: inline;
+}
+  
+
+.nav-buttons button {
+    background: white;
+    color: #004466;
+    border: 2px solid #004466;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+  
+.nav-buttons button:hover {
+    background: hsl(25, 80%, 55%);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px hsla(0, 69%, 53%, 0.825);
+}
+  
+  
+main {
+    padding: 2rem;
+    background-color: white;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #5a20c6f7;
+}
+  
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #eeeeee;
+    color: #333;
+    /* supaya panjangnya sama dengan device */
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -1px 4px #bf8282d3;
+}
+  

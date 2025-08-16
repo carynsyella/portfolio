@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='portfolio.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+        <h1>My Simple Portfolio</h1>
+        <div class="nav-buttons">
+            <form action="{{ url_for('home') }}" method="get">
+            <button type="submit">Home</button>
+            </form>
+            <form action="{{ url_for('projects') }}" method="get">
+            <button type="submit">Projects</button>
+            </form>
+            <form action="{{ url_for('events') }}" method="get">
+            <button type="submit">Events</button>
+            </form>
+            <form action="{{ url_for('about') }}" method="get">
+            <button type="submit">About</button>
+            </form>
+        </div>
+        </header>
+
+        <main>
+        {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2025 My Website</p>
+    </footer>
+</body>
+</html>
